@@ -12,5 +12,14 @@ export class AppComponent {
 
 	constructor() {
 		this.value = math.parse('2+2').compile().eval();
+		let m = math;
+		debugger;
+		// m.parse('2+2').compile() => error
+		let tree = math.parse('2+2');
+		debugger;
+		// tree.compile() => error
+		let exp = math.parse('2+2').eval();
+		debugger;
+		// exp => 4
 	}
 }
