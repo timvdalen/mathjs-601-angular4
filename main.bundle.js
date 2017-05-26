@@ -58,6 +58,15 @@ var AppComponent = (function () {
     function AppComponent() {
         this.value = 0;
         this.value = __WEBPACK_IMPORTED_MODULE_1_mathjs__["parse"]('2+2').compile().eval();
+        var m = __WEBPACK_IMPORTED_MODULE_1_mathjs__;
+        debugger;
+        // m.parse('2+2').compile() => error
+        var tree = __WEBPACK_IMPORTED_MODULE_1_mathjs__["parse"]('2+2');
+        debugger;
+        // tree.compile() => error
+        var exp = __WEBPACK_IMPORTED_MODULE_1_mathjs__["parse"]('2+2').eval();
+        debugger;
+        // exp => 4
     }
     return AppComponent;
 }());
